@@ -13,6 +13,12 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding-left: 80px;
         padding-top: 60px;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            padding: 0;
+            gap: 10px;
+            padding-left: 20px;
+        }
         &--is-active{
             display: grid;
         }
@@ -23,6 +29,10 @@
             &__img {
                 height: 250px;
                 width: 175px;
+                @media (max-width: 768px) {
+                    height: 175px;
+                    width: 125px;
+                }
             }
         }
     }
@@ -33,6 +43,10 @@
         padding-top: 16px;
         padding-right: 35px;
         gap: 8px;
+        @media (max-width: 768px) {
+            padding: 0;
+            padding-top: 30px;
+        }
         &__button{
             width: 100px;
             padding: 8px;

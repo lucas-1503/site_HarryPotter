@@ -1,14 +1,28 @@
 .header{
+    h1{
+        @media (max-width: 768px) {
+            padding: 8px;
+        }
+    }
     &__container{
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
         position: fixed;
         width: 100%;
+        @media (max-width: 768px) {
+            padding: 0;
+        }
     }
     &__logo{
         max-width: 60px;
         width: 100%;
+        @media (max-width: 768px) {
+            max-width: 40px;
+        }
+        @media ( max-width:1024px) {
+            max-width: 80px
+        }
     }
     &__links{
         display: flex;
@@ -16,6 +30,16 @@
             
             padding: 8px;
             list-style: none;
+            @media (max-width: 768px) {
+                padding: 5px;
+                font-size: 12px;
+                padding-top: 20px;
+            } 
+            @media ( max-width:1024px) {
+                padding: 5px;
+                font-size: 24px;
+                padding-top: 20px;
+            }
             a{
                 color: gray;
                 background-color: black;

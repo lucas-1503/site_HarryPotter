@@ -3,7 +3,14 @@
     background-image: url(../../src/images/imagem_fundo.webp);
     text-align: center;
     background-size:cover;
+    @media (max-width: 768px) {
+        min-height: 100vh;
+    }
     
+    @media ( max-width:1024px) {
+        min-height: 100px;
+        background-size: auto;
+    }
     
     &__content{
         max-width: 540px;
@@ -15,6 +22,15 @@
             font-weight: bold;
             color: gray;
             padding-left: 80px;
+            @media (max-width: 768px) {
+                padding: 40px 20px;
+            }
+            @media ( max-width:1024px) {
+                max-width: 1024px;
+                width: 100%;
+                margin-left: 200px;
+                font-size: 40px;
+            }
         }
         &__branding{
             max-width: 600px;
@@ -24,13 +40,41 @@
                 height: 250px;
                 border-radius: 16px;
                 padding-left: 80px;
+                @media (max-width: 768px) {
+                    height: 150px;
+                    margin-top: 50px;
+                    padding: 0;
+                }
+                @media ( max-width:1024px) {
+                    height: 400px;
+                    
+                    margin-top: 50px;
+                    padding: 0;
+                    padding-left: 50%;
+                }   
+            }
+            &__img2{
+                @media ( max-width:1024px) {
+                    padding: 0;
+                    padding-left: 120px;
+                    margin-top: 50px;
+                }   
             }
         }
 
         &__social{
             padding-left: 80px;
             margin-top: 20px;
+            @media (max-width: 768px) {
+                padding: 0;
+            }
+            @media ( max-width:1024px) {
+                max-width: 1024px;
+                width: 100%;
+                margin-left: 200px;
+            }
             &__lista{
+                
             }
             &__links{
                 display: inline;

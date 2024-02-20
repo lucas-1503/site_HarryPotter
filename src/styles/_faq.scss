@@ -3,6 +3,10 @@
     max-width: 1240px;
     width: 100%;
     padding-left: 120px;
+    @media (max-width: 768px) {
+        padding: 20px;
+        padding-top: 20px;
+    }
 
     h2{
         text-align: center;

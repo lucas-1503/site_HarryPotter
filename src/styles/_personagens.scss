@@ -3,6 +3,9 @@
     max-width: 1240px;
     width: 100%;
     padding-left: 80px;
+    @media (max-width: 768px) {
+        padding: 0;
+    }
     
     h2{
         color: grey;
@@ -12,11 +15,17 @@
         padding-bottom: 32px;
         font-size: 46px;
         margin: 2px solid grey;
+        @media ( max-width:1024px) {
+            font-size: 40px;
+        }   
     }
     &__list{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
         &__item{
             padding: 24px;
             display: inline-block;
