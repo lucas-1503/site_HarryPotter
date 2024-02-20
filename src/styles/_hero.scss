@@ -1,0 +1,47 @@
+.hero{
+    min-height: 120vh;
+    background-image: url(../../src/images/imagem_fundo.webp);
+    text-align: center;
+    background-size:cover;
+    
+    
+    &__content{
+        max-width: 540px;
+
+        h3{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: gray;
+            padding-left: 80px;
+        }
+        &__branding{
+            max-width: 600px;
+            margin: 0 auto;
+            margin-left: 0;
+            &__img{
+                height: 250px;
+                border-radius: 16px;
+                padding-left: 80px;
+            }
+        }
+
+        &__social{
+            padding-left: 80px;
+            margin-top: 20px;
+            &__lista{
+            }
+            &__links{
+                display: inline;
+                padding: 16px;
+                a{
+                    text-decoration: none;
+                }
+                &__img{
+                    height: 48px;
+                }
+            }
+        }
+    }
+}

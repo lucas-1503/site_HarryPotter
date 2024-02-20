@@ -1,0 +1,35 @@
+.jogo{
+    max-width: 1240px;
+    width: 100%;
+    padding: 5.6vw;
+    padding-left: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    &__img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    &__texto{
+        text-align: center;
+        h2{
+            color: grey;
+            padding: 8px;
+        }
+        button{
+            font-size: 24px;
+            background-color: red;
+            border: solid 2px #fff;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px;
+            margin-top: 30px;
+            cursor: pointer;
+            border-radius: 20px;
+            &:hover{
+                background-color: rgb(255,0,0,.8);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.personagens{
+    padding: 5.6vw;
+    max-width: 1240px;
+    width: 100%;
+    padding-left: 80px;
+    
+    h2{
+        color: grey;
+        display: block;
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 46px;
+        margin: 2px solid grey;
+    }
+    &__list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        &__item{
+            padding: 24px;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            &__img{
+                height: 124px;
+                width: 124px;
+                border-radius: 50%;
+            }
+            &__p{
+                color: grey;
+                font-size: 14px;
+                font-weight:bold ;
+                margin-top: 8px;
+            }
+        }
+    }
+}
